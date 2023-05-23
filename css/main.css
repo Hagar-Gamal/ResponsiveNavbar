@@ -1,0 +1,167 @@
+/*
+Author        : Hagar Gamal
+Template Name : Pearl - Responsive Portfolio template
+Author URL    : 
+Description   : One Page Personal Portfolio HTML Website, personal portfolio html landing template, Resume Portfolio, Responsive Portfolio, Built with Bootstrap V5
+version       : 1.0
+*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul , li {
+    list-style-type: none;
+}
+header{
+    height: 100px;
+    width: 100%;
+    background-color: #fff;
+    color: #818181;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.11);
+}
+header .row{
+    align-items: center;
+    margin: 0 3%;
+}
+header h1{
+   font-family: 'Pacifico', cursive;
+   color: #c0a756;
+}
+header ul{
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+header ul li{
+    display: inline-block;
+    padding-right: 5%;
+}
+
+header a{
+    text-decoration: none;
+    color: #818181;
+}
+header ul li a{
+    
+    text-transform: uppercase;
+}
+header a:hover{
+    color: #c0a756;
+}
+.active{
+    color: #c0a756;
+}
+.header-right{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.header-right .header-buttons{
+    position: absolute;
+    display: flex;
+    right: 2%;
+}
+header .download-cv{
+    border: 1px solid #818181;
+    border-radius: 15px;
+    padding: 3% 4%;
+    width: 120px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #818181;
+    text-align: center;
+}
+header .download-cv:hover{
+    border: 1px solid #c0a756;
+    color: #c0a756;
+}
+.toggle-button{
+    visibility: hidden;
+    transition: all 1s;
+}
+.toggle-button:hover{
+    border: none;
+}
+.toggle-button span{
+    height: 2px;
+    width: 22px;
+    background-color: #818181;
+    z-index: 1;
+    margin-bottom: 5px;
+    display: block
+}
+.toggle-button span:hover , .toggle-button span:active{
+    
+    background-color: #c0a756;
+}
+@media (max-width:991px) {
+    header .header-middle{
+        padding: 0;
+    }
+   .header-menu{
+        visibility: hidden;
+    }
+    .header-menu  li{
+        margin-top: 15px;
+    }
+    .header-menu  li a{
+        color: #fff;
+    }
+    
+    .header-menu  li a:hover{
+        color: #c0a756;
+    }
+    .header-menu  li:last-child{
+        margin-bottom: 15px;
+    }   
+    header .toggle-button span , .toggle-button{
+        visibility: visible;
+    }
+    .header-right .header-buttons{
+        display: flex;
+        align-items: center;
+        position: static;
+    }
+    header .toggle-button{
+        position: absolute;
+        right: 3%;
+    }
+    header .download-cv{
+        position: absolute;
+        left: 3%;
+        right: 0;
+        margin: 0 auto;
+        padding: 5px 8px;
+        width: 130px;
+    }
+    .header-middle{
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+    }
+    .show-menu{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        flex-direction: column;
+        transition: visibility 1s, opacity 0.5s linear;
+        text-align: center;
+        z-index: 1;
+        top: 100px;
+        width: 100%;
+        background-color: rgba(12,12,13,0.78)
+    }
+}
